@@ -31,7 +31,8 @@ Hence, a flexible model would cause to fit too much of the noise.
 
 
 
-2. Explain whether each scenario is a classification or regression problem,
+2. 
+Explain whether each scenario is a classification or regression problem,
 and indicate whether we are most interested in inference or prediction.
 Finally, provide n and p.
 
@@ -64,3 +65,27 @@ n = 52 (weeks in a year)
 p = 4
 
 
+
+3. 
+We now revisit the bias-variance decomposition.
+
+Explain why each of the five curves has the shape displayed in part (a).
+
+a. Squared bias decreases as we increase flexibility as a flexible func is closer to observed data
+(line closer to points)
+
+b. Variance increases because more flexible methods fllow the points more closely.
+e.g.. using a different training data set or data set will create higher var in modeled fhat
+with a high number of p (flexible) because different points will be followed closely
+
+c. var(e) is the irreducible error. The irreducible error contains variables that are not measured, 
+so they can't be used for the prediction. By definition e cant be predicted using X.
+It correspond to the lowest possible achievable test MSE (var(e) and sq bias sum near 0)
+
+
+c. test MSE is the sum of the above three. It initially decreases until it increases again, 
+as variance increases and squared bias decreases. The relationship is reffered to as the bias-variance trade off
+
+d. The training MSE declines monotonically as flexibility increases, this is because as flexibility increases the f
+curve fits the observed data more closely. This cause overfitting if the model is created to minimise train MSE, i.e.
+in reality the supposed pattern does not exist, so the test data MSE will not follow prediction of the curve for the model based onto too flexible train data model
