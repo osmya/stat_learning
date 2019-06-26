@@ -1,0 +1,27 @@
+1. For each of parts (a) through (d), indicate whether we would generally
+expect the performance of a flexible statistical learning method to be
+better or worse than an inflexible method. Justify your answer.
+
+(a) The sample size n is extremely large, and the number of predictors
+p is small.
+Better - the model will take advantage of large number of observations
+
+(b) The number of predictors p is extremely large, and the number
+of observations n is small.
+Worse - due to small sample size
+
+(c) The relationship between the predictors and response is highly
+non-linear.
+Better - flexible is better than rigid to follow non linear relationships
+
+(d) The variance of the error terms, i.e. σ^2 = Var(), is extremely
+high.
+
+To have high σ^2 means sample size is small and standard dev σ between yhat and Y is large
+Hence, a flexible model would be worse
+
+In other words, since the standard error (Var.u = SE.u^2 = σ^2/n) tells the 
+average amount that the estimate of u (uhat) [the sample mean of the error]
+differs from the true u (the mean of the error), the bias between yi and Y would be large.
+
+Hence, a flexible model would cause to fit too much of the noise 
