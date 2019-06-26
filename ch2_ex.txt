@@ -22,6 +22,7 @@ Hence, a flexible model would be worse
 
 In other words, since the standard error (Var.u = SE.u^2 = σ^2/n) tells the 
 average amount that the estimate of u (uhat) [the sample mean of the error]
-differs from the true u (the mean of the error), the bias between yi and Y would be large.
+differs from the true u (the mean of the error), the bias between yi and Y would be large i.e. a lot of the
+values will be far from true Y so the noise woudl be prevalent.
 
-Hence, a flexible model would cause to fit too much of the noise 
+Hence, a flexible model would cause to fit too much of the noise.
